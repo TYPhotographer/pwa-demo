@@ -4,7 +4,7 @@ if ('serviceWorker' in navigator) {
   console.log('Service Worker: support')
 
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('../service-worker.js').then((reg) => {
+    navigator.serviceWorker.register('service-worker.js').then((reg) => {
       console.log('Service Worker: Registered')
       if ('Notification' in window) {
         console.log('Notification permission default status:', Notification.permission)
